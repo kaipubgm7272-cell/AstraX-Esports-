@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstraX Esports</title>
+  <meta name="description" content="AstraX Esports — Compete. Dominate. Win." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f1a; --card:#0f1530; --neon:#8b5cf6; --cyan:#22d3ee; --text:#e5e7eb; --muted:#9ca3af;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 600px at 50% -10%, #1b1f4a, transparent),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1200px;margin:auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,15,26,.7);backdrop-filter:blur(10px);border-bottom:1px solid rgba(139,92,246,.25);z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center;font-family:Orbitron;font-weight:800;letter-spacing:.08em}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--neon),var(--cyan));box-shadow:0 0 24px rgba(139,92,246,.6)}
+    .nav a{margin-left:18px;opacity:.9}
+    .nav a:hover{opacity:1;color:var(--cyan)}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;min-height:70vh}
+.badge{display:inline-block;padding:8px 12px;border:1px solid rgba(34,211,238,.4);border-radius:999px;color:var(--cyan);font-weight:600}
+h1{font-family:Orbitron;font-size:clamp(32px,5vw,64px);margin:12px 0}
+.cta{display:flex;gap:14px;margin-top:22px}
+.btn{padding:14px 20px;border-radius:14px;font-weight:700;border:1px solid rgba(139,92,246,.5);background:linear-gradient(135deg,rgba(139,92,246,.2),rgba(34,211,238,.15));box-shadow:0 10px 40px rgba(139,92,246,.25)}
+.btn.secondary{background:transparent}
+.panel{background:linear-gradient(180deg,rgba(139,92,246,.15),transparent),var(--card);border:1px solid rgba(139,92,246,.35);border-radius:24px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.panel img{width:100%;border-radius:24px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:64px 0}
+.card{padding:22px;border-radius:22px;background:linear-gradient(180deg,rgba(34,211,238,.12),transparent),var(--card);border:1px solid rgba(34,211,238,.35)}
+.card h3{font-family:Orbitron;margin-top:0}
+
+.roster{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.player{padding:18px;border-radius:20px;background:var(--card);border:1px solid rgba(139,92,246,.35)}
+.avatar{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--neon),var(--cyan));margin-bottom:10px}
+
+footer{border-top:1px solid rgba(139,92,246,.25);padding:28px 0;color:var(--muted)}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .roster{grid-template-columns:1fr 1fr}
+}
+.glow{box-shadow:0 0 30px rgba(139,92,246,.6)}
+.fade-in{animation:fade 1.2s ease forwards;opacity:0}
+@keyframes fade{to{opacity:1;transform:none}}
+.player img{width:64px;height:64px;border-radius:50%;margin-bottom:10px}
+.stats{font-size:14px;color:var(--muted)}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+  <img src="astrax-logo.jpg" alt="AstraX Logo" style="width:36px;height:36px;">
+  ASTRAX
+</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#teams">Teams</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Next‑Gen Esports</span>
+        <h1>Compete. Dominate. Win.</h1>
+        <p class="muted">AstraX Esports is a competitive gaming organization built for champions. Precision gameplay, elite teamwork, and relentless ambition.</p>
+        <div class="cta">
+          <a class="btn" href="#teams">Our Teams</a>
+          <a class="btn secondary" href="#contact">Join Us</a>
+        </div>
+      </div>
+      <div class="panel">
+        <!-- Replace src with your generated banner image -->
+        <img src="astrax-banner.jpg" alt="AstraX Esports banner" />
+      </div>
+    </section><section id="about" class="grid">
+  <div class="card"><h3>Elite Performance</h3><p>Optimized training, analytics-driven strategy, and tournament-ready setups.</p></div>
+  <div class="card"><h3>Community First</h3><p>Scrims, events, and content that grow talent and fans together.</p></div>
+  <div class="card"><h3>Global Vision</h3><p>Competing across titles with international ambitions.</p></div>
+</section>
+
+<section id="teams">
+  <h2 style="font-family:Orbitron">Roster</h2>
+  <div class="roster">
+    <div class="player glow fade-in"><img src="whynot.jpg" /><strong>ATXWhyNot</strong><div class="muted">IGL</div><div class="stats">KD: 4.8 • Matches: 120</div></div>
+    <div class="player glow fade-in"><img src="Shivam.jpg" /><strong>ATXShivam</strong><div class="muted">Entry Fragger</div><div class="stats">KD: 4.5 • Matches: 98</div></div>
+    <div class="player glow fade-in"><img src="Toxic.jpg" /><strong>ATXToxic</strong><div class="muted">Support</div><div class="stats">Assists: 340 • Matches: 110</div></div>
+    <div class="player glow fade-in"><img src="Dark.jpg" /><strong>ATXDark</strong><div class="muted">Scout</div><div class="stats">Accuracy: 78% • Matches: 90</div></div>
+  </div>
+</section>
+
+<section id="matches" style="margin:64px 0">
+  <h2 style="font-family:Orbitron">Recent Matches</h2>
+  <div class="grid">
+    <div class="card glow">BGMI Scrims • Rank #2 • 78 Points</div>
+    <div class="card glow">Weekly Cup • Winner 🏆</div>
+    <div class="card glow">Open Qualifiers • Top 5</div>
+  </div>
+</section>
+
+<section id="contact" style="margin:64px 0">
+  <h2 style="font-family:Orbitron">Connect With Us</h2>
+  <p class="muted">Follow AstraX Esports on social platforms</p>
+  <div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:16px">
+    <a class="btn secondary" href="https://www.instagram.com/teamastraxesports?igsh=MXU3eWhvYnNxY2p5OQ==" target="_blank">📸 Instagram</a>
+    <a class="btn secondary" href="https://youtube.com/@teamastraxesports?si=HWTtFSt7NrzwL2Sy" target="_blank">▶️ YouTube</a>
+    <a class="btn secondary" href="https://discord.gg/Sv9sTRsf" target="_blank">💬 Discord</a>
+  </div>
+</section>
+
+  </main>  <footer>
+    <div class="container">© 2026 AstraX Esports. All rights reserved.</div>
+  </footer>
+</body>
+</html>
